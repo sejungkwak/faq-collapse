@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #495057;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ced4da;
+    overflow-y: scroll;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    z-index: 100;
+}
+
+.container-main {
+    position: relative;
+    width: 90%;
+}
+
+.container-question {
+    position: relative;
+    margin: 2rem auto;
+    border: 1px solid #495057;
+    border-radius: 10px;
+}
+
+.active {
+    box-shadow: 1px 1px 10px 3px #495057;
+    background-color: #f8f9fa;
+}
+
+.btn{
+    position: relative;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: left;
+    background-color: #ced4da;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.collapse::before {
+    position: absolute;
+    content: "\f075";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 7rem;
+    top: -10px;
+    left: -30px;
+    opacity: 0.2;
+    transform: scaleX(-1);
+    color: #ff6700;
+    z-index: 0;
+}
+.answer::before {
+    position: absolute;
+    content: "\f075";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 7rem;
+    top: -10px;
+    left: 30px;
+    opacity: 0.2;
+    color: #004e98;
+}
+
+.fas {
+    position: absolute;
+    font-size: 2rem;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.question {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 30px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.answer {
+    padding: 0 30px 15px;
+    line-height: 1.5;
+}
