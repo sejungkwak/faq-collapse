@@ -1,6 +1,7 @@
 # FAQ Collapse
 
-<img width="1413" alt="Screenshot 2021-03-13 at 23 51 10" src="https://user-images.githubusercontent.com/71224770/111052875-02dd2280-8457-11eb-8e12-942d219c9ec1.png">
+<img width="1412" alt="Screenshot 2021-03-14 at 00 26 52" src="https://user-images.githubusercontent.com/71224770/111053473-07f0a080-845c-11eb-8671-bd569edcb90a.png">
+
 
 #### project notes
 
@@ -17,6 +18,25 @@
 
 > Challenge from Brad Traversy & Florin Pop on Udemy '50 Projects in 50 Days'
 
+
 #### Takeaways from the instructor
 
+1. HTML
+- fontawesome icons inside button tag and class="toggle"
 
+2. CSS
+- no flexbox
+- set transition
+- __overflow: hidden__ to hide bubble outside div
+- properties controlled with active class
+
+3. JavaScript
+- __parentNode__
+```
+const toggles = document.querySelectorAll('.faq-toggle');
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active');
+    })
+})
+```
