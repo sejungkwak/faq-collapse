@@ -21,7 +21,6 @@ body {
     flex-direction: column;
     align-items: center;
     width: 700px;
-    z-index: 100;
 }
 
 .container-main {
@@ -34,6 +33,7 @@ body {
     margin: 2rem auto;
     border: 1px solid #495057;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .active {
@@ -61,7 +61,6 @@ body {
     opacity: 0.2;
     transform: scaleX(-1);
     color: #ff6700;
-    z-index: 0;
 }
 .answer::before {
     position: absolute;
